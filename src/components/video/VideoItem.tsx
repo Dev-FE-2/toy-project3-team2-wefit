@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import VideoStats from './VideoStats';
-import SimpleProfile from '../simple-profile/SimpleProfile';
+import SimpleProfile from '../common/simple-profile/SimpleProfile';
 import { mockUsers } from '@/mocks/mockUsers';
 import { VideoProps } from '@/types/video';
 

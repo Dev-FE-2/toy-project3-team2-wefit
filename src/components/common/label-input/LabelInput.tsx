@@ -24,7 +24,7 @@ const LabelInput = (props: LabelInputProps) => {
 
   return (
     <div className="mb-2 max-w-container">
-      <p className="text-large font-bold">{title}</p>
+      <p className="text-base font-bold">{title}</p>
       <input
         {...inputProps}
         className="mt-1 w-full rounded-medium border border-black p-2 px-4 focus:!border-primary focus:outline-none"
