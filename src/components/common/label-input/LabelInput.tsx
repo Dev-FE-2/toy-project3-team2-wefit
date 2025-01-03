@@ -4,7 +4,7 @@ import { useDebounce } from '@/hooks/usedebounce';
 type LabelInputProps = InputHTMLAttributes<HTMLInputElement> & {
   title: string;
   placeholder: string;
-  description: string;
+  description?: string;
 };
 
 const LabelInput = (props: LabelInputProps) => {
