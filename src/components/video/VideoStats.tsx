@@ -2,16 +2,9 @@ import { BsClockHistory } from 'react-icons/bs';
 import { IoHeartOutline } from 'react-icons/io5';
 import { VscComment } from 'react-icons/vsc';
 import { FaStar, FaRegStar } from 'react-icons/fa';
-
 import { formatNumber } from '@/utils/formatNumber';
 import { getTimeAgo } from '@/utils/getTimeAgo';
-
-type VideoStatsProps = {
-  created_at: Date;
-  like_heart: number;
-  comments: string[];
-  is_bookmarked: boolean;
-};
+import { VideoStatsProps } from '@/types/video';
 
 const VideoStats = ({
   created_at,

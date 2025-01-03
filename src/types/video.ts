@@ -18,9 +18,15 @@ type VideoCategoryProps = {
   onCategoryChange: (category: string) => void;
 };
 
-type VideoSortNavProps = {
-  sortType: 'latest' | 'popular';
-  onSortChange: (type: 'latest' | 'popular') => void;
+interface VideoListProps {
+  videos: VideoProps[];
+}
+
+type VideoStatsProps = {
+  created_at: Date;
+  like_heart: number;
+  comments: string[];
+  is_bookmarked: boolean;
 };
 
-export type { VideoProps, VideoCategoryProps, VideoSortNavProps };
+export type { VideoProps, VideoCategoryProps, VideoListProps, VideoStatsProps };
